@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack -p",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,11 +25,7 @@
   "homepage": "http://cognito.dbroadhurst.net",
   "license": "MIT",
   "dependencies": {
-    "babel-polyfill": "^6.23.0",
-    "react": "^15.6.1",
-    "amazon-cognito-identity-js": "^1.19.0",
-    "aws-sdk": "^2.94.0",
-    "redux-saga": "^0.15.6"
+    "webpack-closure-compiler": "^2.1.6"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -49,6 +45,8 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-standard": "^3.0.1",
-    "webpack": "^3.4.1"
+    "uglifyjs-webpack-plugin": "1.0.0-beta.2",
+    "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.1"
   }
 }
